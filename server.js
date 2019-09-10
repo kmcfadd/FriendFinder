@@ -13,8 +13,8 @@ app.use(express.urlencoded({
 app.use(express.json());
 
 // handles our server routing when requesting or sending data
-require("./routing/apiRoutes")(app);
-require("./routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // starts the server 
 app.listen(PORT, function () {
